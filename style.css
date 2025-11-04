@@ -1,0 +1,135 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #5d4037; /* Marrón chocolate */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+    border-bottom: 3px solid #8d6e63;
+    padding-bottom: 10px;
+}
+
+p, li {
+    font-size: 1.1em;
+}
+
+/* ==== CONTENEDORES ==== */
+div[id] { /* Tarjetas de razas */
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+div[id]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* ==== IMÁGENES ==== */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform tectas0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ==== DETALLES (menús desplegables) ==== */
+details {
+    background: #fff8e1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #6d4c41;
+}
+
+summary:hover {
+    color: #8d6e63;
+}
+
+/* ==== LISTAS ==== */
+ul, ol {
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li {
+    margin: 8px 0;
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #ffccbc;
+    border-radius: 5px;
+}
+
+/* ==== ENLACES ==== */
+a {
+    color: #5d4037;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #8d6e63;
+    text-decoration: underline;
+}
+
+/* ==== HR Y FOOTER ==== */
+hr {
+    border: 1px dashed #8d6e63;
+    margin: 40px 0;
+}
+
+p[align="center"] {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    div[id] {
+        padding: 15px;
+    }
+}
